@@ -8,20 +8,11 @@
 
 body {
   background-color: #19a2ae;
-  overflow: hidden;
   font-family: "Kumbh Sans", sans-serif;
-}
-
-.top-image {
-  position: absolute;
-  left: -25%;
-  top: -80%;
-}
-
-.bottom-img {
-  position: absolute;
-  left: 45%;
-  top: 55%;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: -50% 50%, 130% -40%;
 }
 
 .card {
@@ -36,8 +27,7 @@ body {
   border-radius: 15px;
   background-color: white;
   -webkit-box-shadow: 0px 0px 20px #06646d;
-  box-shadow: 0px 0px 20px #06646d;
-  z-index: 1;
+  box-shadow: 0px 0px 20px #4facb4;
 }
 
 hr {
@@ -113,3 +103,20 @@ li {
   list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 375px) {
+  body {
+    background-position: 130% 50%, -10% -25%;
+    line-height: 1;
+  }
+  .card {
+    width: 250px;
+    height: 280px;
+  }
+  hr {
+    margin: 10px 0;
+  }
+  h2 {
+    margin-top: 30px;
+  }
+}
